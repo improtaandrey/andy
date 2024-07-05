@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andy Clothing</title>
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="global.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+   <header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <img src="Andy.svg" alt="Logo da marca Andy">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Botão do Carrinho -->
+    <div class="cart-button">
+        <a href="carrinho.html">
+            <img src="Cart.svg" alt="Ícone do carrinho de compras">
+        </a>
+    
+   </header> 
+   <main>
+    <section>
+        <div class="text-wrapper">
+             <h1>Chegamos!</h1>
+             <h2>Essa é a sua nova loja de roupas</h2>
+             <h3>Camisetas</h3>
+             
+        </div>
+
+        <div class="itens">
+            <div class="image-container">
+                <img id="camiseta1" src="Camiseta1.png" alt="Camiseta1">
+                <img class="add-to-cart" src="adicionar.svg" alt="Adicionar ao Carrinho">
+            </div>
+            <div class="image-container">
+                <img id="camiseta2" src="Camiseta2.png" alt="Camiseta2">
+                <img class="add-to-cart" src="adicionar.svg" alt="Adicionar ao Carrinho">
+            </div>
+            <div class="image-container">
+                <img id="camiseta3" src="Camiseta3.png" alt="Camiseta3">
+                <img class="add-to-cart" src="adicionar.svg" alt="Adicionar ao Carrinho">
+            </div>
+
+            
+
+
+           
+
+
+        </div>
+
+        <div class="text-wrapper2">
+            <h4>Moletons</h4>
+        </div>
+
+        <div class="itens2">
+            <div class="image-container2">
+                <img id="moletom1" src="Moletom1.svg" alt="Moletom1">
+                <img class="add-to-cart" src="adicionar.svg" alt="Adicionar ao Carrinho">
+            </div>
+            <div class="image-container2">
+                <img id="moletom2" src="Moletom2.svg" alt="Moletom2">
+                <img class="add-to-cart" src="adicionar.svg" alt="Adicionar ao Carrinho">
+            </div>
+            <div class="image-container2">
+                <img id="moletom3" src="Moletom3.svg" alt="Moletom3">
+                <img class="add-to-cart" src="adicionar.svg" alt="Adicionar ao Carrinho">
+            </div>
+        </div>
+
+        <div class="text-wrapper3">   
+            <h5>Em breve mais peças chegarão para transformar o seu estilo!</h5>
+        </div>
+
+       
+
+        
+        
+        
+        <img src="BG1.png" alt="">
+        
+    </section>
+
+    <section class="second-section">
+        <img src="BG1.png" alt="">  
+    </section>
+    <section class="second-section">
+        <img src="BG1.png" alt="">  
+    </section>
+    
+
+    
+
+</main>
+  
+     
+
+
+ <!-- Rodapé -->
+ <footer class="footer">
+    <div class="newsletter">
+        <p>Registre-se para ganhar descontos exclusivos:</p>
+        <div class="newsletter-signup">
+            <input type="email" placeholder="SEU E-MAIL" required>
+            <button type="submit">+</button>
+        </div>
+    </div>
+
+    <div class="footer-links">
+        <a href="sobreamarca.html" class="info-button">SOBRE A MARCA</a>
+        <a href="faleconosco.html" class="contact-button">CENTRAL DE ATENDIMENTO</a>
+        
+        
+    </div>
+
+    <div class="social-media">
+        <a href="https://www.facebook.com/"><img src="facebook.svg" alt="Facebook"></a>
+        <a href="https://www.instagram.com/improtaandrey/"><img src="instagram.svg" alt="Instagram"></a>
+        <a href="youtube.com.br"><img src="youtube.svg" alt="YouTube"></a>
+        <a href="x.com.br"><img src="x.svg" alt="X"></a>
+        <a href="spotify.com.br"><img src="spotify.svg" alt="Spotify"></a>
+        <a href="pinterest.com.br"><img src="pinterest.svg" alt="Pinterest"></a>
+
+        
+    </div>
+
+    <div class="footer-info">
+        <p>&copy; 2024 Andy Clothing - 00.000.000/0000-00</p>
+        <p>Desenvolvido por: Improta Design</p>
+    </div>
+</footer>
+
+
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Seleciona a imagem da Camiseta1 pelo ID
+        const camiseta1 = document.getElementById('camiseta1');
+        const camiseta2 = document.getElementById('camiseta2');
+        const camiseta3 = document.getElementById('camiseta3');
+
+        // Adiciona um evento de clique à imagem da Camiseta1
+        camiseta1.addEventListener('click', function() {
+            downloadImagem(camiseta1.src, 'Camiseta1.png');
+        });
+
+        // Adiciona um evento de clique à imagem da Camiseta2
+        camiseta2.addEventListener('click', function() {
+            downloadImagem(camiseta2.src, 'Camiseta2.png');
+        });
+
+        // Adiciona um evento de clique à imagem da Camiseta3
+        camiseta3.addEventListener('click', function() {
+            downloadImagem(camiseta3.src, 'Camiseta3.png');
+        });
+
+        // Função para realizar o download da imagem
+        function downloadImagem(url, nomeArquivo) {
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = nomeArquivo;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Seleciona o botão do carrinho
+    const cartButton = document.querySelector('.cart-button a');
+    // Seleciona o modal
+    const modal = document.getElementById('modal');
+    // Seleciona o elemento para exibir os itens do carrinho
+    const cartItems = document.querySelector('.cart-items');
+
+    // Adiciona um evento de clique ao botão do carrinho
+    cartButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        // Mostra o modal
+        modal.style.display = 'block';
+        // Adiciona a classe de animação
+        modal.classList.add('animate');
+    });
+
+    // Adiciona um evento de clique ao botão de fechar do modal
+    const closeBtn = document.querySelector('.close');
+    closeBtn.addEventListener('click', function() {
+        // Esconde o modal
+        modal.style.display = 'none';
+        // Remove a classe de animação
+        modal.classList.remove('animate');
+    });
+
+    // Simulação de adicionar itens ao carrinho (adaptar conforme necessário)
+    function adicionarItemAoCarrinho(item) {
+        const itemElement = document.createElement('div');
+        itemElement.textContent = item;
+        cartItems.appendChild(itemElement);
+    }
+
+    
+});
+
+</script>
+
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+    const cartItems = document.querySelector('.cart-items');
+
+    // Função para adicionar camiseta ao carrinho
+    function adicionarCamisetaAoCarrinho(camisetaId) {
+        const camisetaNome = `Camiseta ${camisetaId}`;
+        const itemElement = document.createElement('div');
+        itemElement.textContent = camisetaNome;
+
+        // Botão de remover
+        const removeButton = document.createElement('button');
+        removeButton.textContent = 'Remover';
+        removeButton.classList.add('remove-item');
+        removeButton.addEventListener('click', function() {
+            cartItems.removeChild(itemElement);
+        });
+
+        // Adiciona item ao carrinho com botão de remover
+        itemElement.appendChild(removeButton);
+        cartItems.appendChild(itemElement);
+    }
+
+    // Adiciona evento de clique para cada ícone de adicionar ao carrinho
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    addToCartButtons.forEach(function(button, index) {
+        button.addEventListener('click', function() {
+            adicionarCamisetaAoCarrinho(index + 1); // Adiciona camiseta com base no índice (1, 2, 3)
+        });
+    });
+});
+
+
+</script>
+</body>
+
+<!-- Modal do Carrinho -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">
+            <!-- Ícone SVG para fechar -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-escape" viewBox="0 0 16 16">
+                <path d="M8.538 1.02a.5.5 0 1 0-.076.998 6 6 0 1 1-6.445 6.444.5.5 0 0 0-.997.076A7 7 0 1 0 8.538 1.02"/>
+                <path d="M7.096 7.828a.5.5 0 0 0 .707-.707L2.707 2.025h2.768a.5.5 0 1 0 0-1H1.5a.5.5 0 0 0-.5.5V5.5a.5.5 0 0 0 1 0V2.732z"/>
+              </svg>
+        </span>
+        <h2>Itens no Carrinho</h2>
+        <div class="cart-items">
+            <!-- Aqui serão exibidos os itens do carrinho -->
+        </div>
+    </div>
+</div>
+
+</html>

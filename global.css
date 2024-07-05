@@ -1,0 +1,377 @@
+:root {
+    --bg-primary: #000000;
+    --text-ligth: #FFFFFF;
+    --color-action: #1c49ff;
+}
+
+body {
+    font-family: 'New Rocker', cursive;
+}
+
+
+header{
+    background-color: var(--bg-primary);
+    height: fit-content;
+    
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    color: #FFFFFF;
+
+
+    padding: 12px 0;
+}
+
+header nav ul{
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+
+}
+
+header nav ul li{
+    min-width: fit-content;
+    height: fit-content;
+    padding: 0 0.75rem;
+    cursor: pointer;
+
+    list-style: none;
+}
+
+main section{
+    text-align: center;
+}
+
+.second-section {
+    
+    margin-top: -100px; 
+}
+
+main section h1{
+     color: var(--text-ligth);
+     font-size: 4rem;
+     font-weight: bold;
+     line-height: 3rem;
+     letter-spacing: -0.28px;
+     margin-bottom: 14px;
+}
+
+main section h2{
+    color: var(--text-ligth);
+     font-size: 1rem;
+     font-weight: bold;
+     line-height: 3rem;
+     letter-spacing: -0.28px;
+     margin-top: 20px;
+     
+     
+}
+
+main section h3{
+    color: var(--text-ligth);
+     font-size: 2.5rem;
+     font-weight: bold;
+     line-height: 3rem;
+     letter-spacing: -0.28px;
+     margin-top: 40px;
+}
+
+main section h4{
+    color: var(--text-ligth);
+     font-size: 2.5rem;
+     font-weight: bold;
+     line-height: 3rem;
+     letter-spacing: -0.28px;
+}
+
+
+main section .text-wrapper{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 69px;
+    font-family: 'New Rocker', cursive; 
+}
+
+.itens {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 300px;
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+
+.image-container {
+    flex: 1;
+    margin: 10px; 
+    max-width: 30%; 
+    text-align: center;
+    
+}
+
+.image-container img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px; 
+}
+
+.image-container img:hover {
+    transform: scale(1.1); 
+}
+
+main section .text-wrapper2{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 700px;
+    font-family: 'New Rocker', cursive; 
+}
+
+main section .text-wrapper3{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1400px;
+    font-family: 'New Rocker', cursive;
+    font-size: 80px;
+    color: #fff;
+}
+
+.itens2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 760px;
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+
+.image-container2 {
+    flex: 1;
+    margin: 10px; 
+    max-width: 30%; 
+    text-align: center; 
+}
+
+.image-container2 img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px; 
+}
+
+.image-container2 img:hover {
+    transform: scale(1.1); 
+}
+
+
+
+
+/* Abaixo css do formulário de contato */
+
+
+.footer {
+    background-color: #ffcbcb;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    margin-top: -10px;
+    
+}
+
+.newsletter {
+    margin-bottom: 20px;
+}
+
+.newsletter-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+
+.newsletter-signup input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 19px 0 0 19px;
+    outline: none;
+    font-family: 'New Rocker', cursive;
+}
+
+.newsletter-signup button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #6e0000;
+    color: #fff;
+    border-radius: 0 19px 19px 0;
+    cursor: pointer;
+}
+
+.newsletter-signup button:hover {
+    
+    transform: scale(1.2); /* Efeito de zoom */
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    display: block;
+    margin: 10px 0;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin: 20px 0;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-info {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+p{
+    font: size 25px;
+    font-family: 'New Rocker', cursive; 
+}
+
+.footer-links{
+    font-family: 'New Rocker', cursive;
+}
+
+
+/* Carrinho */
+
+.cart-button {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+.cart-button img {
+    width: 30px; /* Ajuste o tamanho conforme necessário */
+}
+
+/* CSS para o Modal */
+.modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background-color: rgb(50, 0, 0);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.modal-content {
+    position: relative;
+    height: 100%;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Animação de surgimento */
+.modal.animate {
+    animation: modal-show 0.3s ease;
+}
+
+@keyframes modal-show {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.modal h2 {
+    margin-top: 20px; /* Remove o espaço superior padrão */
+    font-family: 'New Rocker', cursive;
+    color: #fff;
+}
+
+
+/* Estilos para os ícones de adicionar ao carrinho */
+.add-to-cart {
+    width: 30px; /* Tamanho do ícone */
+    height: 30px;
+    margin-top: 15px; /* Espaçamento acima do ícone */
+    cursor: pointer; /* Cursor ao passar sobre o ícone */
+    transition: transform 0.2s ease; /* Transição suave ao escalar o ícone */
+}
+
+.add-to-cart:hover {
+    transform: scale(1.1); /* Efeito de escala ao passar o mouse */
+}
+
+/* Estilo específico para o ícone de fechar do modal */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.close svg {
+    width: 24px; /* Tamanho do ícone */
+    height: 24px;
+    fill: none;
+    stroke: #FFFFFF; /* Cor do ícone */
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* atendimento */
+
+
+
+
+

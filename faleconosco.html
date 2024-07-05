@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco - Andy Clothing</title>
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="global.css"/>
+    <link rel="stylesheet" href="form.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="Andy.svg" alt="Logo da marca Andy">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+
+   
+
+    <main>
+        <section>
+            <h1>Fale Conosco</h1>
+            <form id="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        
+    </main>
+
+    
+
+    <div>
+        <footer>
+            <div class="footer-info">
+                <p>&copy; 2024 Andy Clothing - 00.000.000/0000-00</p>
+                <p>Desenvolvido por: Improta Design</p>
+            </div>
+        </footer>
+    </div>
+
+    
+    </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            if (!name || !phone || !email || !message) {
+                alert('Por favor, preencha todos os campos.');
+                return;
+            }
+
+            alert('Formulário enviado com sucesso!');
+        });
+    </script>
+</body>
+</html>

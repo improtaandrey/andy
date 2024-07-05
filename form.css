@@ -1,0 +1,77 @@
+
+
+
+body {
+    font-family: 'New Rocker', cursive;
+    background-color: #5C3434;
+}
+
+main section h1{
+    text-align: center;
+    font-size: 30px;
+}
+main {
+    width: 100%;
+    max-width: 345px; /* Largura máxima do conteúdo dentro do main */
+    background-color: rgba(255, 255, 255, 0.067); /* Fundo meio transparente apenas para o conteúdo */
+    border-radius: 15px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Espaçamento interno */
+    margin-left: 20px;
+    margin-top: 50px;
+    
+    
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    color: #fff;
+    text-align: center;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;  /* Bordas arredondadas */
+    border: 1px solid #ccc;  /* Adiciona uma borda leve */
+    border-radius: 10px;
+    border: 1px solid #ccc;  /* Adiciona uma borda leve */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;  /* Bordas arredondadas */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    font-family: 'New Rocker', cursive;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+footer{
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    color: #FFFFFF;
+}
+
+.footer-info{
+    color: #FFFFFF;
+}
